@@ -1,4 +1,4 @@
-# axios-cancel
+# How to cancel axios request in Vue.js
 
 ## Project setup
 ```
