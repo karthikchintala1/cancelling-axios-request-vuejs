@@ -4,6 +4,7 @@
       <router-link to="/">Cancellation</router-link> <br />
       <router-link to="/users">Cancellation with vuex</router-link>
     </div>
+    <router-view />
   </div>
 </template>
 <script>

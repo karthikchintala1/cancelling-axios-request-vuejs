@@ -1,7 +1,9 @@
 <template>
   <div>
     <div>
-      <b-button variant="outline-success" @click="send">Send Request</b-button>
+      <b-button variant="outline-success" @click="getUsersAsync"
+        >Send Request</b-button
+      >
       &nbsp;
       <b-button
         variant="outline-danger"
@@ -50,9 +52,6 @@ export default {
   methods: {
     ...mapActions("user", ["getUsersAsync"]),
     ...mapMutations("user", ["cancelRequest"]),
-    async send() {
-      await this.getUsersAsync();
-    },
   },
   computed: {
     ...mapState("user", ["users", "currentStatus"]),
